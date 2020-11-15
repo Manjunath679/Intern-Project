@@ -1,3 +1,3 @@
 # Intern-Project
- Dynamic Banking Website
+ Dynamic Banking Website using nodejs and mongodb
  
