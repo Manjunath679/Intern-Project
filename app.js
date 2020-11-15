@@ -3,7 +3,7 @@ var bodyparser = require('body-parser');
 const bank = require('../new/customersdb'); 
 const path = require('path');
 const  app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 const MongoClient = require('mongodb').MongoClient;
 
