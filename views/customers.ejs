@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .last{
+            position: absolute;
+            margin-left:-10%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <h1>PUBLIC BANK</h1>
+    <ul class="links">
+       <li> <a href= "index">Home</a></li>
+       <li> <a href= "#" class="active" >Customers</a></li>
+       <li> <a href= "transfermoney" >Transfer Money</a></li>
+    </ul>
+    <div class="cust">
+        CUSTOMERS:
+    </div>
+    <ul class="hori">
+        <li>Id</li>
+        <li> Name</li>
+        <li>Emailid</li>
+        <li>TotalAmount</li>
+        <li class="last">Bills</li>
+    </ul>
+        <% customers.forEach(function(customer){ %>
+          <ul class="custo">
+              <% Object.keys(customer).forEach(function(key){%>
+                <li><%= customer[key]%></li>
+           <%}); %>
+          </ul>
+          <br>
+          <br>
+        <% }); %>
+</body>
+</html> 
